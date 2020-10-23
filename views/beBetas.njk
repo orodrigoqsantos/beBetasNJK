@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block beBetas %}
+<!-- beBetas -->
+    <section class="beBetas">
+
+        {% for item in items %}
+                <div class="beBeta" id="{{item.id}}">
+                    <div class="beBeta_picture">
+                        <img src="/.Pictures/Fotos/{{item.id}}.png" alt="imagem {{item.id}}">
+                    </div>
+            
+                    <div>
+                        <h1 class="beBeta_name">{{item.name}}</h1>
+                    </div>
+                </div>
+        {% endfor %}
+        
+    </section>
+
+    <div class=" modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <div class="card">
+                <img class="picture" src="">
+                <p class="name"></p>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

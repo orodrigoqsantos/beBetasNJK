@@ -1,0 +1,147 @@
+/*Zerando os espaçamentos automátios do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    /* HEADER */
+    --headerBackGroundColor: whitesmoke;
+    --logoMargin: auto 150px;
+    --betaLogoWidth: 110px;
+    /* HEADER */
+
+    /* BODY */
+    --bodyBackgroundColor: #000000;
+    /* BODY */
+
+    /* beBETAS */
+    --namesColor: rgb(255, 206, 0);
+    --imageWidth: 150px;
+    --imageGap: 15px;
+    --picturesMargin: 50px auto;
+    --display: grid;
+    --columnsDisplay: 1fr 1fr 1fr 1fr; 
+    /* beBetas */
+
+    /* FOOTER */
+    --footerBackGroundColor: whitesmoke;
+    --beBetaimgWidth: 300px;
+    /* FOOTER */
+}
+
+header {
+    padding: 15px;
+    background: var(--headerBackGroundColor);
+    margin-bottom: 50px;
+}
+
+body {
+    background: var(--bodyBackgroundColor);
+}
+
+#logo {
+    margin: var(--logoMargin);
+    width: var(--betaLogoWidth);
+}
+
+/* beBetas COMPONENTS */
+
+.beBetas {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: var(--columnsDisplay);
+    gap: 50px;
+    cursor: pointer;
+}
+
+.beBetas img {
+    width: var(--imageWidth);
+    border-radius: 25px;
+}
+
+.beBetas h1 {
+    color: var(--namesColor);
+}
+
+/* beBetas COMPONENTS */
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    background: var(--footerBackGroundColor);
+}
+
+#beBetaimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--beBetaimgWidth);
+}
+
+/* FOOTER */
+
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* MODAL.ACTIVE */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* MODAL.ACTIVE */
+
+.modal {
+    background-color: rgb(255, 255, 255,0.90);
+    width: 400px;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.modal .card .picture {
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.modal p {
+    /*color: var(--namesColor);*/
+    color: rgb(250, 210, 0);
+    text-shadow: 0 0 1px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* MODAL */
